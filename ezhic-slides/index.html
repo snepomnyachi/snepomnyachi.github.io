@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+	<meta charset="utf-8">
+    
+	<title>Circuit breaking for unreliable calls</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="reveal.js/css/rainbow.css">
+	<link rel="stylesheet" href="reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js/css/theme/solarized.css">
+    <style type="text/css">
+p { text-align: left; }
+</style>
+
+
+	</head>
+  
+	<body>
+
+	  <div class="reveal">
+		<div class="slides">
+          <section data-markdown> 
+            <script type="text/template">
+#Dealing with 
+##Broken Black Boxes
+
+            </script>
+          </section>
+          
+        <section data-markdown="basedon.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+        <section data-markdown="brblbox.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+        <section data-markdown="motivation.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+        <section data-markdown="components1.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+        <section data-markdown="comp_labels.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+        <section data-markdown="comp_history.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+        <section data-markdown="comp_breakers.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+        <section data-markdown="comp_probing.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>          
+        <section data-markdown="comp_havens.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>
+ <section data-markdown> 
+            <script type="text/template">
+##Dashboard
+Sure, why not?
+            </script>
+          </section> 
+        <section data-markdown="syntax.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>                       
+        <section data-markdown="syntax2.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section> 
+        <section data-markdown="syntax3.md"  
+                 data-separator="^\n\n\n"  
+                 data-separator-vertical="^\n\n"  
+                 data-separator-notes="^Note:">
+        </section>                     
+	    </div>  
+	  </div>
+
+	  <script src="reveal.js/lib/js/head.min.js"></script>
+	  <script src="reveal.js/js/reveal.js"></script>
+
+	  <script>
+          
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: false,
+        
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+        
+		// Optional reveal.js plugins
+		dependencies: [
+		{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() {
+             console.log("loading");
+             hljs.initHighlightingOnLoad(); } },
+
+		{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+		{ src: 'reveal.js/plugin/notes/notes.js', async: true }
+		]
+		});
+        
+	  </script>
+      
+	</body>
+</html>
